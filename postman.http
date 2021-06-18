@@ -1,0 +1,6 @@
+###
+GET http://localhost:3000/payment-vnpay/vnpay_return
+content-type: application/json
+###
+GET http://localhost:3000/payment-vnpay/vnpay_ipn
+content-type: application/json
