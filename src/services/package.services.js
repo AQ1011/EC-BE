@@ -56,11 +56,11 @@ const createPackageEnterprise = async body => {
 
 const getPackageCustomer = async () => {
     try {
-        const package = await PackageCustomer.find({})
+        const packageC = await PackageCustomer.find({})
         return {
             message: 'Successfully get PackageCustomer',
             success: true,
-            data: package
+            data: packageC
         }
     } catch (err) {
         return {
@@ -72,11 +72,11 @@ const getPackageCustomer = async () => {
 
 const getPackageEnterprise = async () => {
     try {
-        const package = await PackageEnterprise.find({})
+        const packageE = await PackageEnterprise.find({})
         return {
             message: 'Successfully get Package',
             success: true,
-            data: package
+            data: packageE
         }
     } catch (err) {
         return {
