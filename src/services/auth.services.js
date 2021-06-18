@@ -1,7 +1,7 @@
 const USER = require('../models/User')
 const ENTERPRISE = require('../models/Enterprise')
 const bcrypt = require('bcryptjs')
-const { ACCESS_TOKEN_SECRET } = require("../config")
+const { ACCESS_TOKEN_SECRET, APP_URL } = require("../config")
 const jwtServices = require("./jwt.services")
 const moment = require('moment')
 const nodemailer = require('nodemailer')
@@ -296,7 +296,7 @@ const sendMail = (email) => {
     from: 'holmesz17@outlook.com',
     to: email,
     subject: 'Email confirmation',
-    html: `Press <a href=http://localhost:5000/auth/verify/${email}> here </a> to verify your email.`
+    html: `Press <a href=${APP_URL}/auth/verify/${email}> here </a> to verify your email.`
   }
   transport.sendMail(mailOptions, function (err, res) {
     if (err) {
