@@ -41,7 +41,8 @@
     "serve-favicon": "^2.4.5",
     "sha256": "^0.2.0",
     "validator": "^13.5.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "evn-cmd":"^10.1.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
