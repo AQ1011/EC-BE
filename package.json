@@ -15,7 +15,8 @@
     "start:prod": "node dist/src/server.js",
     "dev": "nodemon --exec babel-node src/server.js",
     "pm2": "yarn build && yarn pm2:start",
-    "pm2:start": "pm2 start ecosystem.config.js"
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "rimraf": "./node_modules/rimraf/bin.js"
   },
   "author": "",
   "license": "ISC",
